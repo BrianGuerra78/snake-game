@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Etiqueta de título para el nombre de la página -->
+    <title>Juego de la Serpiente</title>
+
+    <!-- Etiqueta de estilo para CSS interno -->
+    <style>
+        /* Estilo para el elemento del juego */
+        
+        #game {
+            border: 3px solid black;
+        }
+        /* Estilo para centrar el juego en la página */
+        
+        .game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+        /* Estilo para centrar el juego en la página */
+        
+        .game-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Título y descripción del juego -->
+    <div class="game-info">
+        <h1>Snake-Game</h1>
+        <p>Utilice las flechas de su teclado para jugar</p>
+    </div>
+
+    <!-- Contenedor del juego -->
+    <div class="game-container">
+        <!-- Canvas donde se dibuja el juego -->
+        <canvas id="game" width="500" height="500"></canvas>
+    </div>
+
+    <!-- Puntaje del juego -->
+    <div id="score"></div>
+
+    <!-- Aquí iría el script del juego -->
+    <script src="snake.js"></script>
+</body>
+
+</html>
